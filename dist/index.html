@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="PhishShield is an explainable phishing-awareness tool for reviewing suspicious links and messages." />
+  <title>PhishShield — Think before you click</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="grid"></div>
+  <main class="wrap">
+    <nav><div class="brand"><span class="brand-mark">⌁</span> PhishShield</div><div class="nav-note">Explainable security awareness</div></nav>
+    <section class="hero">
+      <div class="eyebrow"><span class="pulse"></span> Cyber safety, made understandable</div>
+      <h1>Pause. Inspect.<br><span style="color:var(--cyan)">Click smarter.</span></h1>
+      <p>PhishShield highlights common warning signs in suspicious links and messages, then explains what to look for before you act.</p>
+    </section>
+    <section class="tool" aria-labelledby="checker-title">
+      <div class="tool-head"><div class="tabs"><button class="tab active" aria-pressed="true" data-mode="url">Link check</button><button class="tab" aria-pressed="false" data-mode="email">Email text</button></div><span class="privacy">No scans are stored or sent anywhere.</span></div>
+      <div class="scan-area"><label for="input" id="checker-title" class="sr-only" style="position:absolute;left:-9999px">Phishing checker</label><textarea id="input" aria-describedby="input-error" maxlength="20000" spellcheck="false" placeholder="Paste a link you are unsure about…"></textarea><p id="input-error" class="input-error" role="alert"></p><div class="actions"><button class="sample" id="sample">Try an educational example</button><button class="scan" id="scan">Analyze risk →</button></div></div>
+      <div class="result" id="result" aria-live="polite"><div class="result-card"><div class="gauge"><div style="text-align:center"><div class="score" id="score">--</div><div class="score-label">risk score / 100</div></div></div><div><h3 class="risk-title" id="riskTitle">Analysis <span>complete</span></h3><ul class="findings" id="findings"></ul></div></div><p class="note"><b>Important:</b> This is an awareness tool using clear, local rules—not a guarantee that a website or email is safe. Never enter passwords or OTPs after following an unexpected link.</p></div>
+    </section>
+    <section class="section" id="learn"><div class="section-heading"><h2>What PhishShield looks for</h2><p>Good security starts with explaining the signal, not just showing a red warning.</p></div><div class="cards"><article class="card"><div class="icon">⌘</div><h3>Deceptive links</h3><p>Links that use IP addresses, unusual separators, long paths, or internationalized domains are worth pausing over.</p></article><article class="card"><div class="icon">◉</div><h3>Pressure tactics</h3><p>“Urgent,” “verify now,” and “account blocked” language is designed to make people act before thinking.</p></article><article class="card"><div class="icon">✦</div><h3>Safe habits</h3><p>Open trusted services from your bookmarks, verify the sender independently, and never share an OTP.</p></article></div></section>
+    <footer class="bottom"><span><strong>PhishShield</strong> — a cybersecurity awareness project.</span><span>Built for learning. No data leaves your browser.</span></footer>
+  </main>
+  <script src="analyzer.js" defer></script>
+  <script src="app.js" defer></script>
+</body>
+</html>
