@@ -1,0 +1,12 @@
+{
+  "name": "phishshield-awareness",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Explainable local phishing-awareness checks",
+  "scripts": {
+    "test": "node --test tests/analyzer.test.cjs"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
