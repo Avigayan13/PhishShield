@@ -86,7 +86,7 @@ PhishShield/
 └── README.md
 ```
 
-Hosting-specific configuration is stored in `.openai/hosting.json`. It is not required to open the site locally.
+Optional Sites hosting configuration is kept locally and excluded from this repository. It is not required to run the website.
 
 ## Limitations
 
